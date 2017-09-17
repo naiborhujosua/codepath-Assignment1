@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+  <ImageView
+    android:id="@+id/ivImageMovie"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    app:srcCompat="@mipmap/ic_launcher"/>
+
+  <TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="11dp"
+    android:layout_marginStart="11dp"
+    android:layout_toEndOf="@+id/ivImageMovie"
+    android:layout_toRightOf="@+id/ivImageMovie"
+    android:text="IT"/>
+
+  <TextView
+    android:id="@+id/tvOverview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/ivImageMovie"
+    android:layout_alignLeft="@+id/tvTitle"
+    android:layout_below="@id/tvTitle"
+    android:layout_alignStart="@+id/tvTitle"
+    android:text="In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise. "/>
+</RelativeLayout>
